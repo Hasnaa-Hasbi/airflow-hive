@@ -1,0 +1,24 @@
+[2022-12-05T10:50:13.576+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: dag_for_yahoo_data.transform_data scheduled__2022-12-02T23:44:27.290102+00:00 [queued]>
+[2022-12-05T10:50:13.608+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: dag_for_yahoo_data.transform_data scheduled__2022-12-02T23:44:27.290102+00:00 [queued]>
+[2022-12-05T10:50:13.614+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T10:50:13.617+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2022-12-05T10:50:13.617+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-05T10:50:13.665+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): transform_data> on 2022-12-02 23:44:27.290102+00:00
+[2022-12-05T10:50:13.675+0000] {standard_task_runner.py:55} INFO - Started process 90 to run task
+[2022-12-05T10:50:13.684+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'dag_for_yahoo_data', 'transform_data', 'scheduled__2022-12-02T23:44:27.290102+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/ourDag.py', '--cfg-path', '/tmp/tmprn8f9n0b']
+[2022-12-05T10:50:13.689+0000] {standard_task_runner.py:83} INFO - Job 28: Subtask transform_data
+[2022-12-05T10:50:14.193+0000] {task_command.py:376} INFO - Running <TaskInstance: dag_for_yahoo_data.transform_data scheduled__2022-12-02T23:44:27.290102+00:00 [running]> on host f05c9ee773ab
+[2022-12-05T10:50:14.548+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=ENSAJ
+AIRFLOW_CTX_DAG_ID=dag_for_yahoo_data
+AIRFLOW_CTX_TASK_ID=transform_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-02T23:44:27.290102+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-02T23:44:27.290102+00:00
+[2022-12-05T10:50:14.549+0000] {logging_mixin.py:137} INFO - Task for transforming data
+[2022-12-05T10:50:14.550+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-05T10:50:14.590+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=dag_for_yahoo_data, task_id=transform_data, execution_date=20221202T234427, start_date=20221205T105013, end_date=20221205T105014
+[2022-12-05T10:50:14.810+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-05T10:50:14.984+0000] {taskinstance.py:2623} INFO - 1 downstream tasks scheduled from follow-on schedule check
