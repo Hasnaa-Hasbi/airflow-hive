@@ -150,10 +150,6 @@ Maintenant lorsque le DAG s’exécute, à l’aide de Streamlit, nous ouvrons u
 -	Migrating from Apache Oozie to Apache Airflow
 -	Comparaison entre Apache Oozie et Apache Airflow
 
-```
-    docker-compose up -d
-```
-
 
 
 
